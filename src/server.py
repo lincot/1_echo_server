@@ -7,7 +7,7 @@ import secrets
 import base64
 
 
-if __name__ == '__main__':
+def main():
     sock = MySocket()
     port = get_port()
 
@@ -84,3 +84,7 @@ if __name__ == '__main__':
             print(f'received {len(data)} bytes')
             conn.sendall(data + b'\n')
             print('sent the data back')
+
+
+if __name__ == '__main__':
+    main()

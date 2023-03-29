@@ -11,7 +11,7 @@ def get_host():
         return host
 
 
-if __name__ == '__main__':
+def main():
     host = get_host()
     port = get_port()
     sock = MySocket()
@@ -25,3 +25,7 @@ if __name__ == '__main__':
 
         msg = input().encode()
         sock.sendall(msg)
+
+
+if __name__ == '__main__':
+    main()
